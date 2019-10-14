@@ -9,19 +9,22 @@
 body{
     font-family: 'Mansalva', cursive;
 }
-h1{
+.primary-font{
     font-size:40px;
+    font-family: 'Mansalva', cursive;
+}
+.secondary-font {
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
-#first-heading {
-    font-family: 'Mansalva', cursive;
+#primary-title{
+    font-size: 100px
 }
 </style>
 </head>
 
 <body>
-    <h1 id="first-heading">My Demo</h1>
-    <h1>My Demo2</h1>
+    <h1 id="primary-title">My Demo</h1>
+    <h1> class="secondary-font">HELLO HELLO</h1>
     <svg class="pop" id="svg" width="300" height="300" viewbox="0 0 100 100">
         <filter id="blur">
           <feGaussianBlur stdDeviation="1" />
@@ -29,7 +32,7 @@ h1{
         <path class="slidein" id="mountain" fill="#ab9457" d="" />
     </svg>
     
-    <button onclick="generateMountain()">welcome to my world</button>
+    <button class="primary-font" onclick="generateMountain()">welcome to my world</button>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
     <script type="text/javascript">
